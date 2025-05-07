@@ -49,3 +49,5 @@ end
 
 
 gem "jwt", "~> 2.10"
+
+gem "faker", "~> 3.5"
