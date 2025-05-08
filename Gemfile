@@ -51,3 +51,5 @@ end
 gem "jwt", "~> 2.10"
 
 gem "faker", "~> 3.5"
+
+gem "jsonapi-serializer", "~> 2.2"
