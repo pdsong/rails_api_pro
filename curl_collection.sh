@@ -26,7 +26,7 @@ JsonWebToken.decode("eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3NDY3MjUxMz
 创建产品
   curl -X POST http://192.168.137.139:3000/api/v1/products \
 -H "Content-Type: application/json" \
--H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3NDY3MjUxMzB9.kcg0hTPiM10D8pYU-wu0Qa2DtjSAdgl-BvAlCVwntnY" \
+-H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE3NDcwNDcyNDV9.hlHnkz5nWvFchEgJykVeyxnesjl6b6FnQGTjVUF1c0c" \
 -d '{
   "product": {
     "title": "Sample Product",
@@ -52,3 +52,7 @@ JsonWebToken.decode("eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3NDY3MjUxMz
  curl -X DELETE http://192.168.137.139:3000/api/v1/products/1 \
 -H "Content-Type: application/json" \
 -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE3NDY3MjUxMzB9.kcg0hTPiM10D8pYU-wu0Qa2DtjSAdgl-BvAlCVwntnY" \
+
+
+黑客新闻
+curl -X GET http://192.168.137.139:3000/api/v1/hack_news/recent

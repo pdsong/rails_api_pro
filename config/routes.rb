@@ -12,6 +12,11 @@ Rails.application.routes.draw do
       resources :users, only: %i[show create update destroy]
       resources :tokens, only: %i[create]
       resources :products, only: %i[index show create update destroy]
+      resources :hack_news do
+        collection do
+          get "recent", to: "hack_news#recent"
+        end
+      end
     end
   end
 end
